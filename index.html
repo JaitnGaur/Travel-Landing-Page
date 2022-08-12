@@ -52,7 +52,7 @@
     <section class="hero-section">
       <div class="container">
         <div class="hero-centerbox">
-          <h1 class="fs-xl">Discover amazing places in Japan</h1>
+          <h1 class="fs-xl fw-m">Discover amazing places in Japan</h1>
           <p class="fs-xs">
             Jump off balcony, onto stranger's head. Chase ball of string hide
             when guests come over. Being gorgeous with belly side up i cloud pee
@@ -61,13 +61,13 @@
           </p>
           <div class="form-div">
             <div class="form-div__first-box">
-              <input class="radiobtn" type="radio" />
+              <input class="radiobtn" type="radio" name="destination" />
               <div class="input-div">
                 <input type="text" /><label>What whould you like to do?</label>
               </div>
             </div>
             <div class="form-div__second-box">
-              <input type="radio" />
+              <input type="radio" name="destination" />
               <div class="input-div">
                 <input type="text" /><label>Where whould you like to go?</label>
               </div>
@@ -138,11 +138,7 @@
                 <a class="color-bright-blue fs-xs" href="javascript:void(0)"
                   >LEARN MORE</a
                 >
-                <img
-                  class="benefit-section__box-arrow-img"
-                  src="./images/right-arrow.png"
-                  alt="right-arrow"
-                />
+                <i class="fas fa-long-arrow-alt-right color-bright-blue"></i>
               </div>
             </div>
           </div>
@@ -157,25 +153,39 @@
             <i class="fas fa-long-arrow-alt-right color-bright-blue"></i>
           </div>
           <div class="inspired-section__flex">
-            <div class="inspired-section__flex__img1">
-              <img src="./images/mount-fuji.png" />
+            <div class="inspired-section__img-box">
+              <a href="javascript:void(0)"
+                ><img src="./images/mount-fuji.png" alt="mount-fuji"
+              /></a>
+              <span class="fw-b fs-xl">Mount-Fuji</span>
             </div>
-            <div>
-              <img
-                width="635px"
-                height="354px"
-                class="item2"
-                src="./images/kyoto.png"
-              />
+            <div class="inspired-section__img-box">
+              <a href="javascript:void(0)"
+                ><img
+                  width="635px"
+                  height="354px"
+                  class="item2"
+                  src="./images/kyoto.png"
+              /></a>
+              <span class="fw-b fs-xl">Kyoto</span>
             </div>
-            <div>
-              <img width="415px" height="283px" src="./images/tokyo.png" />
+            <div class="inspired-section__img-box">
+              <a href="javascript:void(0)"
+                ><img width="415px" height="283px" src="./images/tokyo.png"
+              /></a>
+              <span class="fw-b fs-xl">Tokyo</span>
             </div>
-            <div>
-              <img width="415px" height="283px" src="./images/niigata.png" />
+            <div class="inspired-section__img-box">
+              <a href="javascript:void(0)"
+                ><img width="415px" height="283px" src="./images/niigata.png"
+              /></a>
+              <span class="fw-b fs-xl">Niigata</span>
             </div>
-            <div>
-              <img width="414px" height="283px" src="./images/sapporo.png" />
+            <div class="inspired-section__img-box">
+              <a href="javascript:void(0)"
+                ><img width="414px" height="283px" src="./images/sapporo.png"
+              /></a>
+              <span class="fw-b fs-xl">Sapporo</span>
             </div>
           </div>
         </div>
@@ -377,9 +387,12 @@
       <section class="video-section">
         <div class="container">
           <video class="video" src="./videos/test-video.mp4"></video>
-          <div class="play-btn-circle">
-            <div class="play-btn"></div>
-          </div>
+          <img
+            class="play-button"
+            src="./images/play-button.png"
+            alt="play button"
+          />
+          <img class="video-front-img" src="./images/video-image.png" />
         </div>
       </section>
     </main>
@@ -392,24 +405,48 @@
           </div>
           <div class="footer__lists">
             <ul>
-              <li><a href="javascript:void(0)">Company</a></li>
-              <li><a href="javascript:void(0)">About</a></li>
-              <li><a href="javascript:void(0)">Team</a></li>
-              <li><a href="javascript:void(0)">Carrers</a></li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Company</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">About</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Team</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Carrers</a>
+              </li>
               <li><a href="javascript:void(0)">Privacy Policy</a></li>
             </ul>
             <ul>
-              <li><a href="javascript:void(0)">Locations</a></li>
-              <li><a href="javascript:void(0)">Tokyo</a></li>
-              <li><a href="javascript:void(0)">Kyoto</a></li>
-              <li><a href="javascript:void(0)">Osaka</a></li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Locations</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Tokyo</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Kyoto</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Osaka</a>
+              </li>
               <li><a href="javascript:void(0)">Hokkaido</a></li>
             </ul>
             <ul>
-              <li><a href="javascript:void(0)">Company</a></li>
-              <li><a href="javascript:void(0)">About</a></li>
-              <li><a href="javascript:void(0)">Team</a></li>
-              <li><a href="javascript:void(0)">Carrers</a></li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Company</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">About</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Team</a>
+              </li>
+              <li class="footer-list-margin">
+                <a href="javascript:void(0)">Carrers</a>
+              </li>
               <li><a href="javascript:void(0)">Privacy Policy</a></li>
             </ul>
           </div>

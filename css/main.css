@@ -45,10 +45,10 @@ header {
     width: 100%;
     position: fixed;
     padding-top: 60px;
-    z-index:1;
+    z-index:2;
 }
 .header-scroll {
-    padding: 30px;
+    padding: 30px 0;
     background-color: #0C1A27;
     animation: ease-in 1s;
 }
@@ -87,18 +87,26 @@ nav img {
     background: url('../images/hero-background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
+}
+.hero-section .container {
+    position: relative;
+    min-height: 962px;
 }
 .hero-centerbox {
     color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 102px;
 }
 .hero-centerbox h1 {
     margin-bottom: 22px;
+    max-width: 619px;
 }
 .hero-centerbox p{
     line-height: 24px;
     margin-bottom: 59px;
+    max-width: 546px;
 }
 .hero-centerbox .form-div {
     display: flex;
@@ -125,7 +133,7 @@ nav img {
 .input-div input[type="text"] {
     background-color: transparent;
     max-width: 297px;
-    padding: 7px 20px;
+    padding: 7px 22px;
     border: none;
     outline: none;
 }
@@ -208,9 +216,20 @@ margin-bottom: 37px;
    clear: both;
    flex-wrap: wrap;
 }
-.inspired-section__flex img {
+.inspired-section__img-box {
+    position: relative;
+    background-color: #000000
+}
+.inspired-section__img-box img{
+    opacity: 0.7;
     display: block;
     object-fit: cover;
+}
+.inspired-section__img-box span {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    margin: 0 0 29px 27px;
 }
 /* .inspired-section__flex__img1 {
     min-height: 354px;
@@ -301,6 +320,7 @@ margin-bottom: 37px;
     padding: 12px 15px;
     background-color: #006dfe;
     color: #ffffff;
+    display: inline-block;
 }
 /*-----------------video section-------------------------*/
 .video-section {
@@ -315,29 +335,29 @@ margin-bottom: 37px;
     object-fit: cover;
     width: 100%;
     height: 609px;
+    cursor: pointer;
 }
-.play-btn-circle {
+.video-front-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 609px;
+    object-fit: cover;
+}
+.play-button{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     height: 112px;
     width: 112px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 1;
+    cursor: pointer;
 }
-.play-btn {
-    width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-left: 35px solid #555;
-	border-bottom: 25px solid transparent;
-}
+
 .play-btn-circle.none {
-    display: none!important;
+    display: none;
 }
 /*-------------------Footer part---------------------------*/
 footer {
@@ -351,7 +371,7 @@ footer .container {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 356px;
-    row-gap: 20px;
+    row-gap: 40px;
 }
 .footer__lists {
     display: flex;
@@ -359,7 +379,9 @@ footer .container {
     flex-wrap: wrap;
     column-gap: 138px;
     row-gap: 20px;
-    text-align: center;
+}
+.footer-list-margin {
+    margin-bottom: 12px;
 }
 /*--------------media queries-------------*/
   @media(max-width:768px){
@@ -406,7 +428,6 @@ footer .container {
     }
     nav {
             flex-direction: column;
-            padding: 0;
         }
     .nav-list li {
             margin:0;
@@ -415,18 +436,45 @@ footer .container {
     .nav-list li:hover {
            background-color: #0c375f;
     }
-    .places-section__img-box img {
+    .places-section__img-box img,.places-section__box {
         max-width: 280px;
-        max-height: 271px;
+    }
+    .footer__lists {
+        text-align: center;
+    }
+    .featured-section .container {
+        row-gap: 0px;
+    }
+    .featured-section p {
+        margin-bottom: 25px;
+    }
+    .hero-centerbox .fs-xl {
+        font-size: 40px;
+    }
+    .hero-centerbox p {
+        line-height: 24px;
+        margin-bottom: 34px;
     }
     }
     @media(max-width:1024px) {
      .inspired-section__flex img {
             max-width: 280px ;
-            max-height: 283px;
+            max-height: 160px;
         }
         .featured-section img {
-            max-height: 283px;
+            max-height: 160px;
             max-width: 280px;
         }
+        .inspired-section__img-box span {
+            margin: 0 0 14px 16px;
+        }
+    nav {
+        padding: 0;
+    }
+    .hero-centerbox {
+        padding: 0;
+    }
+    .inspired-section .fs-xl {
+        font-size: 30px;
+    }
     }

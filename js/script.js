@@ -28,14 +28,16 @@ hambtn.addEventListener("click", function () {
 });
 //---------------------video-play-button-------------------
 let video = document.querySelector(".video");
-let btn = document.querySelector(".play-btn-circle");
+let btn = document.querySelector(".play-button");
 
 function toggleplay() {
     if (video.paused) {
         video.play();
-        btn.classList.add("none");
+        btn.style.display = "none";
+        document.querySelector('.video-front-img').style.display = "none";
     } else {
         video.pause();
+        btn.style.display = "block";
         btn.classList.remove("none");
     }
 }
