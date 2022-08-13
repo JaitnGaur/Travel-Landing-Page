@@ -47,6 +47,9 @@ header {
     padding-top: 60px;
     z-index:2;
 }
+header .container {
+    max-width: 100%;
+}
 .header-scroll {
     padding: 30px 0;
     background-color: #0C1A27;
@@ -56,6 +59,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 146px 0 177px;
+    /* padding: 0 78px 0 102px; */
 }
 .ham-button {
     display: none;
@@ -69,9 +74,6 @@ nav {
 }
 .nav-list{
     display: flex;
-}
-nav {
-    padding: 0 78px 0 102px;
 }
 nav img {
     display: block;
@@ -92,6 +94,10 @@ nav img {
     .hero-section {
         background: url('../images/hero-background@2.jpg');
     }
+}
+.hero-section .container {
+    min-height: 962px;
+    position: relative;
 }
 .hero-centerbox {
     color: white;
@@ -128,7 +134,6 @@ nav img {
     left: 23px;
     bottom: 0;
     line-height: 24px;
-    font-size: 18px;
     transition: top .5s;
 }
 .input-div input[type="text"] {
@@ -136,15 +141,31 @@ nav img {
     max-width: 297px;
     padding: 7px 22px;
     border: none;
+    color: #ffffff;
     outline: none;
 }
 .input-div input[type="text"]:focus ~ label {
     top: -12px;
     font-size: 10px;
 }
-/* .radiobtn {
-  
-} */
+.radio {
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.radiobtn {
+  display: none;
+}
+.radio span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    display: inline-block;
+}
 .hero-scrtion__searchbtn {
     text-decoration: none;
     color: #ffffff;
@@ -508,4 +529,13 @@ footer .container {
         .benefit-section__content-wrapper {
             margin: 0 35px;
         }
+        .hero-centerbox .fs-xl {
+            font-size: 35px;
         }
+        .fs-s {
+            font-size: 16px;
+        }        
+        .fs-xs {
+            font-size: 15px;
+        }
+    }
