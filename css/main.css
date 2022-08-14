@@ -149,12 +149,8 @@ nav img {
     font-size: 10px;
 }
 .radio {
-    font-size: 24px;
     display: inline-block;
-    font-weight: 500;
-    text-transform: capitalize;
     vertical-align: middle;
-    color: #ffffff;
 }
 .radiobtn {
   display: none;
@@ -164,7 +160,24 @@ nav img {
     width: 20px;
     border-radius: 50%;
     border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.radio span::after{
+    content: "";
+    height: 12px;
+    width: 12px;
+    background-color: #00aeef;
+    border-radius: 50%;
     display: inline-block;
+    transform: scale(0);
+    transition: 200ms ease-in-out 0s;
+}
+.radio input[type="radio"]:checked ~ span::after {
+    transform: scale(1);
 }
 .hero-scrtion__searchbtn {
     text-decoration: none;
