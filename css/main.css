@@ -139,7 +139,7 @@ nav img {
 .input-div input[type="text"] {
     background-color: transparent;
     max-width: 297px;
-    padding: 7px 22px;
+    padding: 2px 24px;
     border: none;
     color: #ffffff;
     outline: none;
@@ -221,7 +221,7 @@ margin-bottom: 37px;
     margin-bottom: 39px;
     line-height: 24px;
 }
-.benefit-section__box i,.inspired-section i,.featured-section__box i {
+.benefit-section__box i,.inspired-section i,.featured-section__innerbox i {
     margin-left: 26px;
 }
 /*-----------------inspired section-------------------*/
@@ -294,7 +294,13 @@ margin-bottom: 37px;
     justify-content: center;
     align-items: center;
 }
-.featured-section__box{
+.featured-section__outerbox {
+display: flex;
+column-gap: 77px;
+flex-wrap: wrap;
+justify-content: center;
+}
+.featured-section__innerbox {
     max-width: 597px;
     padding: 26px 47px 49px 31px;
 }
@@ -427,8 +433,8 @@ footer .container {
             max-height: 160px;
         } */
         .featured-section img {
-            max-height: 160px;
-            max-width: 280px;
+            width: 550px;
+    height: 310px;
         }
         .inspired-section__img-box span {
             margin: 0 0 14px 16px;
@@ -447,8 +453,12 @@ footer .container {
         flex-direction: column;
     }
 .inspired-section__flex img {
-    max-width: 366px;
-    max-height: 210px;
+    width: 550px;
+    height: 310px;
+}
+.featured-section__outerbox:nth-child(2n) {
+    flex-direction: column-reverse;
+    align-items: center;
 }
     }
     @media(max-width:768px){
@@ -512,8 +522,14 @@ footer .container {
         .featured-section .container {
             row-gap: 0px;
         }
+        .featured-section h3 {
+            margin-bottom: 15px;
+        }
         .featured-section p {
             margin-bottom: 25px;
+        }
+        .featured-section__innerbox {
+            padding: 26px 22px 49px 22px;
         }
         .hero-centerbox .fs-xl {
             font-size: 40px;
@@ -525,6 +541,11 @@ footer .container {
         .inspired-section__flex img {
             max-width: 280px;
             max-height: 210px;
+        }
+        .featured-section img {
+                max-width: 280px;
+                max-height: 210px;
+            }
         }
         .inspired-section .fs-xl {
             font-size: 20px;
