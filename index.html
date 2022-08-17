@@ -21,12 +21,8 @@
         <nav>
           <div class="ham-div">
             <a href="javascript:void(0)"
-              ><img
-                height="31px"
-                width="82px"
-                src="./images/brand-logo.png"
-                alt="brand-logo"
-            /></a>
+              ><img width="82px" height="31px" src="./images/odigo-logo.svg" alt="brand-logo">
+            </a>
             <div class="ham-button">
               <span class="ham-bars"></span>
               <span class="ham-bars"></span>
@@ -66,12 +62,13 @@
                   class="radiobtn"
                   type="radio"
                   name="destination"
+                  id="radio-work"
                 /><span></span>
               </label>
               <div class="input-div">
                 <input id="what-to-do" type="text" /><label
                   for="what-to-do"
-                  class="fs-s"
+                  class="fs-s work-do"
                   >What whould you like to do?</label
                 >
               </div>
@@ -82,12 +79,13 @@
                   class="radiobtn"
                   type="radio"
                   name="destination"
+                  id="radio-destination"
                 /><span></span>
               </label>
               <div class="input-div">
                 <input type="text" id="destination" /><label
                   for="destination"
-                  class="fs-s"
+                  class="fs-s destination"
                   >Where whould you like to go?</label
                 >
               </div>
@@ -174,51 +172,68 @@
           </div>
           <ul class="inspired-section__flex">
             <li class="inspired-section__img-box">
-              <a href="javascript:void(0)"
-                ><img src="./images/mount-fuji.png" alt="mount-fuji" />
-                <!-- <picture>
-                <source
-                  media="(min-width:720px)"
-                  srcset="./images/mount-fuji2.png"
-                />
-                <source 
-                  media="(min-width:1440px)"
-                  srcset="./images/mount-fuji3.png"
-                />
+              <a href="javascript:void(0)">
                 <img
-                  src="./images/mount-fuji.png"
-                  alt="Flowers"
-                  style="width: auto"
-                /> </picture
-            > -->
+                  src="./images/mount-fuji.jpg"
+                  srcset="
+                    ./images/mount-fuji.jpg,
+                    ./images/mount-fuji2.jpg 2x,
+                    ./images/mount-fuji3.jpg 3x
+                  "
+                  alt="mount-fuji"
+                />
               </a>
               <span class="fw-b fs-xl">Mount-Fuji</span>
             </li>
             <li class="inspired-section__img-box">
               <a href="javascript:void(0)"
                 ><img
-                  width="635px"
-                  height="354px"
-                  class="item2"
-                  src="./images/kyoto.png"
+                  src="./images/kyoto.jpg"
+                  srcset="
+                  ./images/kyoto.jpg,
+                    ./images/kyoto2.jpg     2x,
+                    ./images/kyoto3.jpg     3x
+                  "
+                  alt="kyoto"
               /></a>
               <span class="fw-b fs-xl">Kyoto</span>
             </li>
             <li class="inspired-section__img-box">
               <a href="javascript:void(0)"
-                ><img width="415px" height="283px" src="./images/tokyo.png"
+                ><img
+                  src="./images/tokyo.jpg"
+                  srcset="
+                    ./images/tokyo.jpg,
+                    ./images/tokyo2.jpg 2x,
+                    ./images/tokyo3.jpg 3x
+                  "
+                  alt="tokyo"
               /></a>
               <span class="fw-b fs-xl">Tokyo</span>
             </li>
             <li class="inspired-section__img-box">
-              <a href="javascript:void(0)"
-                ><img width="415px" height="283px" src="./images/niigata.png"
+              <a href="javascript:void(0)">
+                <img
+                  src="./images/niigata.jpg"
+                  srcset="
+                    ./images/niigata.jpg,
+                    ./images/niigata2.jpg 2x,
+                    ./images/niigata3.jpg 3x
+                  "
+                  alt="Niigata"
               /></a>
               <span class="fw-b fs-xl">Niigata</span>
             </li>
             <li class="inspired-section__img-box">
-              <a href="javascript:void(0)"
-                ><img width="414px" height="283px" src="./images/sapporo.png"
+              <a href="javascript:void(0)"></a>
+                <img
+                  src="./images/sapporo.jpg"
+                  srcset="
+                    ./images/sapporo.jpg,
+                    ./images/sapporo2.jpg 2x,
+                    ./images/sapporo3.jpg 3x
+                  "
+                  alt="Sapporo"
               /></a>
               <span class="fw-b fs-xl">Sapporo</span>
             </li>
@@ -230,11 +245,14 @@
         <div class="container">
           <div class="featured-section__outerbox">
             <img
-              height="354px"
-              width="597px"
-              src="./images/tottori.png"
-              alt="Place: Tottori"
-            />
+                  src="./images/tottori.jpg"
+                  srcset="
+                  ./images/tottori.jpg,
+                  ./images/tottori2.jpg 2x,
+                  ./images/tottori3.jpg 3x
+                  "
+                  alt="Tottori"
+              />
             <div class="featured-section__innerbox">
               <h3 class="fw-m fs-m color-dark-blue">
                 Prefecture in Focus: Tottori
@@ -267,11 +285,16 @@
               >
               <i class="fas fa-long-arrow-alt-right color-bright-blue"></i>
             </div>
+            
             <img
-              height="354px"
-              width="597px"
-              src="./images/kyoto-arashiyama.png"
-            />
+                  src="./images/kyoto-arashiyama.jpg"
+                  srcset="
+                  ./images/kyoto-arashiyama.jpg,
+                  ./images/kyoto-arashiyama2.jpg 2x,
+                  ./images/kyoto-arashiyama3.jpg 3x
+                  "
+                  alt="kyoto-arashiyama"
+              />
           </div>
         </div>
       </section>
@@ -282,7 +305,15 @@
           <ul class="places-section__flexbox">
             <li class="places-section__box">
               <div class="places-section__img-box">
-                <img src="./images/nagoya.png" />
+                <img
+                  src="./images/nagoya.jpg"
+                  srcset="
+                  ./images/nagoya.jpg,
+                  ./images/nagoya2.jpg 2x,
+                  ./images/nagoya3.jpg 3x
+                  "
+                  alt="Nagoya"
+              />
                 <div class="places-section__img-box__span">
                   <span class="fs-s">NAGOYA</span>
                   <div class="fs-xs">
@@ -304,7 +335,15 @@
             </li>
             <li class="places-section__box">
               <div class="places-section__img-box">
-                <img src="./images/niigata-2.png" />
+                <img
+                  src="./images/niigata2-1.jpg"
+                  srcset="
+                  ./images/niigata2-1.jpg,
+                  ./images/niigata2-2.jpg 2x,
+                  ./images/niigata2-3.jpg 3x
+                  "
+                  alt="Niigata"
+              />
                 <div class="places-section__img-box__span">
                   <span class="fs-s">NIIGATA</span>
                   <div class="fs-s">
@@ -326,7 +365,15 @@
             </li>
             <li class="places-section__box">
               <div class="places-section__img-box">
-                <img src="./images/osaka.png" />
+                <img
+                  src="./images/osaka.jpg"
+                  srcset="
+                  ./images/osaka.jpg,
+                  ./images/osaka2.jpg 2x,
+                  ./images/osaka3.jpg 3x
+                  "
+                  alt="Osaka"
+              />
                 <div class="places-section__img-box__span">
                   <span class="fs-s">OSAKA</span>
                   <div class="fs-s">
@@ -348,7 +395,16 @@
             </li>
             <li class="places-section__box">
               <div class="places-section__img-box">
-                <img src="./images/saitama.png" />
+             
+                <img
+                  src="./images/saitama.jpg"
+                  srcset="
+                  ./images/saitama.jpg,
+                  ./images/saitama2.jpg 2x,
+                  ./images/saitama3.jpg 3x
+                  "
+                  alt="Saitama"
+              />
                 <div class="places-section__img-box__span">
                   <span class="fs-s">SAITAMA</span>
                   <div class="fs-s">
@@ -370,7 +426,16 @@
             </li>
             <li class="places-section__box">
               <div class="places-section__img-box">
-                <img src="./images/ueno.png" />
+                
+                <img
+                  src="./images/ueno.jpg"
+                  srcset="
+                  ./images/ueno.jpg,
+                  ./images/ueno2.jpg 2x,
+                  ./images/ueno3.jpg 3x
+                  "
+                  alt="Ueno"
+              />
                 <div class="places-section__img-box__span">
                   <span class="fs-s">UENO</span>
                   <div class="fs-s">
@@ -392,7 +457,16 @@
             </li>
             <li class="places-section__box">
               <div class="places-section__img-box">
-                <img src="./images/shibuya.png" />
+              
+                <img
+                  src="./images/shibuya.jpg"
+                  srcset="
+                  ./images/shibuya.jpg,
+                  ./images/shibuya2.jpg 2x,
+                  ./images/shibuya3.jpg 3x
+                  "
+                  alt="Shibuya"
+              />
                 <div class="places-section__img-box__span">
                   <span class="fs-s">SHIBUYA</span>
                   <div class="fs-s">
@@ -424,7 +498,7 @@
             src="./images/play-button.png"
             alt="play button"
           />
-          <img class="video-front-img" src="./images/video-image.png" />
+          <img class="video-front-img" src="./images/video-img.webp" />
         </div>
       </section>
     </main>
@@ -433,7 +507,9 @@
       <div class="container">
         <div class="footer__wrapper">
           <div>
-            <img width="170px" height="52px" src="./images/brand-logo.png" />
+            <a href="javascript:void(0)"
+              ><img width="82px" height="31px" src="./images/odigo-logo.svg" alt="brand-logo">
+            </a>
           </div>
           <div class="footer__lists">
             <ul>

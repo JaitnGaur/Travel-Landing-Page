@@ -26,6 +26,20 @@ hambtn.addEventListener("click", function () {
         }
     }
 });
+//---------radio-button checked---------------------------
+let radiobtn2 = document.querySelector('#radio-destination');
+let radiobtn1 = document.querySelector('#radio-work');
+document.querySelector('.destination').addEventListener('click', function () {
+    if (radiobtn2.checked == "true") {
+        radiobtn2.checked = "false"
+    } else radiobtn2.checked = "true";
+})
+document.querySelector('.work-do').addEventListener('click', function () {
+    if (radiobtn1.checked == "true") {
+        radiobtn1.checked = "false"
+    } else radiobtn1.checked = "true";
+})
+
 //---------------------video-play-button-------------------
 let video = document.querySelector(".video");
 let btn = document.querySelector(".play-button");
