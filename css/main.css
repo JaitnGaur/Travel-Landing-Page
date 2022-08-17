@@ -145,7 +145,7 @@ nav {
   color: #ffffff;
   outline: none;
 }
-.input-div input[type="text"]:focus ~ label {
+.input-div input[type="text"]:focus ~ label,.input-div input[type="text"]:valid ~ label {
   top: -20px;
   font-size: 12px;
 }
