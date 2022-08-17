@@ -128,7 +128,7 @@ nav {
 .form-div .input-div {
   display: inline-block;
   position: relative;
-  min-width: 258px;
+  margin-bottom: 10px;
 }
 .input-div label {
   position: absolute;
@@ -258,7 +258,7 @@ nav {
   display: block;
   object-fit: cover;
 }
-.inspired-section__img-box span {
+.inspired-section__figcaption {
   position: absolute;
   bottom: 0;
   color: #ffffff;
@@ -427,7 +427,7 @@ footer .container {
     width: 550px;
     height: 310px;
   }
-  .inspired-section__img-box span {
+  .inspired-section__figcaption {
     margin: 0 0 14px 16px;
   }
   nav {
@@ -592,6 +592,9 @@ footer .container {
   .hero-centerbox .fs-xl {
     font-size: 35px;
   }
+  .fs-m {
+    font-size: 25px;
+}
   .fs-ms {
     font-size: 20px;
 }
@@ -609,6 +612,10 @@ footer .container {
 }
 .inspired-section .fs-l {
   font-size: 21px;
+}
+.play-button {
+  height: 70px;
+  width: 70px;
 }
   .footer__wrapper {
     flex-direction: column;
