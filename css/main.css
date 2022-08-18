@@ -87,13 +87,13 @@ nav {
 }
 .hero-section {
   min-height: 962px;
-  background: url("../images/hero-background.png");
+  background: url("../images/hero-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 1441px) {
   .hero-section {
-    background: url("../images/hero-background@2.jpg");
+    background: url("../images/hero-background@2x.jpg");
   }
 }
 .hero-section .container {
@@ -409,13 +409,9 @@ footer .container {
 /*--------------media queries-------------*/
 
 @media (max-width: 1024px) {
-  /* .inspired-section__flex img {
-            max-width: 280px ;
-            max-height: 160px;
-        } */
 .hero-scrtion__searchbtn {
  padding: 10px 30px;     
-        }
+   }
   .benefit-section__innerbox {
     flex-direction: column;
     align-items: center;
