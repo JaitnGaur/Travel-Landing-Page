@@ -44,6 +44,18 @@ body {
 .color-white {
   color: #ffffff;
 }
+.btn-primary {
+  color: #ffffff;
+    background-color: #1b7dff;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-lg {
+  padding: 15px 39px;
+}
+.btn-sm{
+  padding: 12px 15px;
+}
 header {
   width: 100%;
   position: fixed;
@@ -110,7 +122,7 @@ nav {
   margin-bottom: 22px;
   max-width: 619px;
 }
-.hero-centerbox p {
+.hero-centerbox__para {
   line-height: 24px;
   margin-bottom: 59px;
   max-width: 546px;
@@ -175,10 +187,6 @@ nav {
 .radio input[type="radio"]:checked ~ span::after {
   transform: scale(1);
 }
-.btn-lg {
-  padding: 15px 39px;
-  
-}
 /*----------benefit section---------------*/
 .benefit-section {
   margin-top: -223px;
@@ -209,13 +217,11 @@ nav {
 .benefit-section__box h3 {
   margin-bottom: 26px;
 }
-.benefit-section__box p {
+.benefit-section__box__para {
   margin-bottom: 39px;
   line-height: 24px;
 }
-.benefit-section__box i,
-.inspired-section i,
-.featured-section__innerbox i {
+.fa-long-arrow-alt-right{
   margin-left: 26px;
 }
 /*-----------------inspired section-------------------*/
@@ -246,11 +252,11 @@ nav {
   clear: both;
   flex-wrap: wrap;
 }
-.inspired-section__img-box {
+.inspired-section__list{
   position: relative;
   background-color: #000000;
 }
-.inspired-section__img-box img {
+.inspired-section__images{
   opacity: 0.7;
   display: block;
   object-fit: cover;
@@ -258,7 +264,6 @@ nav {
 .inspired-section__figcaption {
   position: absolute;
   bottom: 0;
-  color: #ffffff;
   margin: 0 0 29px 27px;
 }
 /*-------------------featured section----------------------------*/
@@ -288,7 +293,7 @@ nav {
   margin-bottom: 45px;
   max-width: 357px;
 }
-.featured-section p {
+.featured-section__para {
   line-height: 24px;
   margin-bottom: 94px;
 }
@@ -319,7 +324,7 @@ nav {
   position: relative;
   margin-bottom: 56px;
 }
-.places-section__img-box img {
+.places-section__images{
   display: block;
   width: 100%;
 }
@@ -336,12 +341,9 @@ nav {
 .places-section__img-box__span-margin {
   margin-left: 14px;
 }
-.places-section__box p {
+.places-section__box__para {
   line-height: 24px;
   margin-bottom: 31px;
-}
-.btn-sm{
-  padding: 12px 15px;
 }
 /*-----------------video section-------------------------*/
 .video-section {
@@ -379,9 +381,7 @@ nav {
 /*-------------------Footer part---------------------------*/
 footer {
   background-color: #0e1d28;
-}
-footer .container {
-  padding: 121px 20px 118px;
+  padding: 121px 0 118px;
 }
 .footer__wrapper {
   display: flex;
@@ -413,7 +413,7 @@ footer .container {
   .benefit-section__box {
     width: calc(100% / 2);
   }
-  .featured-section img {
+  .featured-section__image {
     width: 550px;
     height: 310px;
   }
@@ -433,7 +433,7 @@ footer .container {
     align-items: center;
     flex-direction: column;
   }
-  .inspired-section__flex img {
+  .inspired-section__images{
     width: 550px;
     height: 310px;
   }
@@ -454,7 +454,7 @@ footer .container {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .featured-section p {
+  .featured-section__para {
     margin-bottom: 22px;
   }
 }
@@ -514,14 +514,8 @@ footer .container {
   .hero-section .container {
     min-height: 796px;
 }
-.btn-primary {
-  color: #ffffff;
-    background-color: #1b7dff;
-    display: inline-block;
-    cursor: pointer;
-}
   .places-section__img-box,
-  .places-section__box p {
+  .places-section__box__para {
     margin-bottom: 20px;
   }
   .footer__lists {
@@ -534,7 +528,7 @@ footer .container {
   .featured-section h3 {
     margin-bottom: 15px;
   }
-  .featured-section p {
+  .featured-section__para {
     margin-bottom: 25px;
   }
   .featured-section__innerbox {
@@ -543,22 +537,22 @@ footer .container {
   .hero-centerbox .fs-xl {
     font-size: 40px;
   }
-  .hero-centerbox p {
+  .hero-centerbox__para {
     line-height: 24px;
     margin-bottom: 34px;
   }
   .inspired-section,.featured-section,.places-section {
     padding: 35px 0;
 }
-  .inspired-section__flex img {
+  .inspired-section__images {
     width: 100%;
     height: 100%;
   }
-  .inspired-section__flex li {
+  .inspired-section__list {
     width: 75%;
     min-width: 280px;
   }
-  .featured-section img {
+  .featured-section__image {
     width: 75%;
     height: 100%;
     min-width: 280px;
@@ -582,7 +576,7 @@ footer .container {
   .benefit-section__box-img {
     margin-bottom: 25px;
   }
-  .benefit-section__box p {
+  .benefit-section__box__para {
     margin-bottom: 12px;
   }
   .benefit-section__content-wrapper {
