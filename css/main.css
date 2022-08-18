@@ -41,6 +41,9 @@ body {
 .color-bright-blue {
   color: #006dfe;
 }
+.color-white {
+  color: #ffffff;
+}
 header {
   width: 100%;
   position: fixed;
@@ -78,12 +81,8 @@ nav {
 .brand-logo {
   display: block;
 }
-.nav-li-margin {
+.mr-lg {
   margin-right: 82px;
-}
-.nav-list a,
-.footer__lists a {
-  color: #ffffff;
 }
 .hero-section {
   min-height: 962px;
@@ -176,11 +175,9 @@ nav {
 .radio input[type="radio"]:checked ~ span::after {
   transform: scale(1);
 }
-.hero-scrtion__searchbtn {
-  color: #ffffff;
-  background-color: #1b7dff;
+.btn-lg {
   padding: 15px 39px;
-  display: inline-block;
+  
 }
 /*----------benefit section---------------*/
 .benefit-section {
@@ -343,11 +340,8 @@ nav {
   line-height: 24px;
   margin-bottom: 31px;
 }
-.places-section__box__btn {
+.btn-sm{
   padding: 12px 15px;
-  background-color: #006dfe;
-  color: #ffffff;
-  display: inline-block;
 }
 /*-----------------video section-------------------------*/
 .video-section {
@@ -409,7 +403,7 @@ footer .container {
 /*--------------media queries-------------*/
 
 @media (max-width: 1024px) {
-.hero-scrtion__searchbtn {
+.btn-lg {
  padding: 10px 30px;     
    }
   .benefit-section__innerbox {
@@ -510,13 +504,22 @@ footer .container {
   nav {
     flex-direction: column;
   }
-  .nav-list li {
+  .nav-lists {
     margin: 0;
     padding: 30px;
   }
-  .nav-list li:hover {
+  .nav-lists:hover {
     background-color: #0c375f;
   }
+  .hero-section .container {
+    min-height: 796px;
+}
+.btn-primary {
+  color: #ffffff;
+    background-color: #1b7dff;
+    display: inline-block;
+    cursor: pointer;
+}
   .places-section__img-box,
   .places-section__box p {
     margin-bottom: 20px;
